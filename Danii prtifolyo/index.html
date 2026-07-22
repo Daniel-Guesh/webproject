@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daniel Guesh — IT Student &amp; Future Software Developer</title>
+  <meta name="description" content="Portfolio of Daniel Guesh, IT student and future software developer." />
+
+  <!-- Fonts: Space Grotesk (display), Inter (body), JetBrains Mono (code accents) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ STICKY NAVIGATION ============ -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="#home" class="navbar__brand">
+        <span class="navbar__bracket">&lt;</span>Daniel<span class="navbar__accent">.Guesh</span><span class="navbar__bracket">/&gt;</span>
+      </a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- Dark mode toggle -->
+        <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+          <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+
+        <!-- Mobile menu button -->
+        <button id="menuToggle" class="menu-toggle" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home">
+      <div class="hero__inner">
+        <div class="hero__text fade-in">
+          <p class="eyebrow">// hello_world.js</p>
+          <h1 class="hero__title">Hello, I'm <span class="hero__title-accent">Daniel Guesh</span></h1>
+          <p class="hero__subtitle">IT Student <span class="dot-sep">•</span> Future Software Developer</p>
+          <p class="hero__intro">
+            Passionate about programming, technology, and building real-world solutions.
+            I enjoy turning problems into clean, working software — one line of code at a time.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#projects" class="btn btn--primary">View My Projects</a>
+            <a href="#" class="btn btn--secondary" id="downloadCV" download>Download CV</a>
+          </div>
+        </div>
+
+        <div class="hero__visual fade-in">
+          <!-- Portrait card -->
+          <div class="portrait-card">
+            <div class="portrait-frame">
+              <!-- Placeholder monogram avatar (swap src for a real photo, e.g. portrait.jpg) -->
+              <svg class="portrait-avatar" viewBox="0 0 200 200" role="img" aria-label="Portrait placeholder for Daniel Guesh">
+                <defs>
+                  <linearGradient id="avatarGrad" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#2563EB"/>
+                    <stop offset="100%" stop-color="#1E3A8A"/>
+                  </linearGradient>
+                </defs>
+                <rect width="200" height="200" rx="16" fill="url(#avatarGrad)"/>
+                <text x="100" y="118" font-family="Space Grotesk, sans-serif" font-size="64" font-weight="600" fill="#ffffff" text-anchor="middle">DG</text>
+              </svg>
+            </div>
+            <span class="status-pill"><span class="status-dot"></span>Available for internships</span>
+          </div>
+
+          <!-- Code editor signature element -->
+          <div class="editor-window">
+            <div class="editor-titlebar">
+              <span class="dot dot--red"></span>
+              <span class="dot dot--yellow"></span>
+              <span class="dot dot--green"></span>
+              <span class="editor-filename">profile.js</span>
+            </div>
+            <pre class="editor-body"><code id="typedCode"></code><span class="caret">|</span></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="section" id="about">
+      <p class="section-label fade-in">// about</p>
+      <h2 class="section-title fade-in">About Me</h2>
+
+      <div class="about__grid">
+        <p class="about__text fade-in">
+          I'm Daniel Guesh, an IT student with a genuine curiosity for how software shapes
+          the world around us. My days revolve around problem-solving — breaking big challenges
+          into small, logical pieces and building solutions that actually work. I'm comfortable
+          moving between front-end interfaces and back-end logic, and I take pride in writing
+          code that's clean, structured, and easy to maintain.
+        </p>
+        <p class="about__text fade-in">
+          Beyond the classroom, I treat every project as a chance to learn something new,
+          whether that's a language, a framework, or a better way to debug a stubborn error.
+          My goal is to grow into a professional software engineer who builds reliable,
+          real-world systems — and who never stops learning along the way.
+        </p>
+      </div>
+
+      <div class="about__highlights fade-in">
+        <div class="highlight-card">
+          <span class="highlight-icon">🧩</span>
+          <h3>Problem-Solving</h3>
+          <p>Breaking down complex challenges into clear, logical steps.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">💻</span>
+          <h3>Software Development</h3>
+          <p>Building functional, well-structured applications end to end.</p>
+        </div>
+        <div class="highlight-card">
+          <span class="highlight-icon">📚</span>
+          <h3>Continuous Learning</h3>
+          <p>Always exploring new tools, languages, and best practices.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS SECTION ============ -->
+    <section class="section section--alt" id="skills">
+      <p class="section-label fade-in">// skills</p>
+      <h2 class="section-title fade-in">Skills &amp; Tools</h2>
+
+      <div class="skills__grid">
+        <div class="skills__col fade-in">
+          <h3 class="skills__col-title">Technical Skills</h3>
+
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>HTML &amp; CSS</span><span>90%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>JavaScript</span><span>80%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>Python</span><span>85%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>Java</span><span>75%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-bar__head"><span>SQL</span><span>80%</span></div>
+            <div class="skill-bar__track"><div class="skill-bar__fill" data-width="80"></div></div>
+          </div>
+        </div>
+
+        <div class="skills__col fade-in">
+          <h3 class="skills__col-title">Tools</h3>
+          <div class="tools__grid">
+            <div class="tool-card">
+              <span class="tool-icon">🧭</span>
+              <span>VS Code</span>
+            </div>
+            <div class="tool-card">
+              <span class="tool-icon">🔧</span>
+              <span>Git &amp; GitHub</span>
+            </div>
+          </div>
+
+          <h3 class="skills__col-title skills__col-title--spaced">Currently Exploring</h3>
+          <div class="tag-list">
+            <span class="tag">Data Structures</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Databases</span>
+            <span class="tag">Clean Code</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS SECTION ============ -->
+    <section class="section" id="projects">
+      <p class="section-label fade-in">// projects</p>
+      <h2 class="section-title fade-in">Featured Projects</h2>
+
+      <div class="projects__grid">
+
+        <article class="project-card fade-in">
+          <div class="project-card__top">
+            <span class="project-card__tag">System</span>
+          </div>
+          <h3 class="project-card__title">Hotel Management System</h3>
+          <p class="project-card__desc">
+            A system to manage bookings, users, and day-to-day hotel operations —
+            from reservations to room availability.
+          </p>
+          <div class="project-card__stack">
+            <span class="tech-pill">C#</span>
+            <span class="tech-pill">SQL Server</span>
+          </div>
+          <a href="#" class="btn btn--outline btn--small">View Project</a>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-card__top">
+            <span class="project-card__tag">Web App</span>
+          </div>
+          <h3 class="project-card__title">Shopping Cart Website</h3>
+          <p class="project-card__desc">
+            An e-commerce front end with dynamic cart functionality — add, update,
+            and remove items with a smooth shopping experience.
+          </p>
+          <div class="project-card__stack">
+            <span class="tech-pill">HTML</span>
+            <span class="tech-pill">CSS</span>
+            <span class="tech-pill">JavaScript</span>
+          </div>
+          <a href="#" class="btn btn--outline btn--small">View Project</a>
+        </article>
+
+        <article class="project-card fade-in">
+          <div class="project-card__top">
+            <span class="project-card__tag">Game</span>
+          </div>
+          <h3 class="project-card__title">Simple Python Game</h3>
+          <p class="project-card__desc">
+            A basic interactive game built in Python, focused on game logic,
+            user input handling, and clean control flow.
+          </p>
+          <div class="project-card__stack">
+            <span class="tech-pill">Python</span>
+          </div>
+          <a href="#" class="btn btn--outline btn--small">View Project</a>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION ============ -->
+    <section class="section section--alt" id="contact">
+      <p class="section-label fade-in">// contact</p>
+      <h2 class="section-title fade-in">Get In Touch</h2>
+
+      <div class="contact__grid">
+        <div class="contact__info fade-in">
+          <p class="contact__intro">
+            Have a project in mind, an opportunity, or just want to say hello?
+            My inbox is always open.
+          </p>
+
+          <a href="mailto:daniel.guesh@example.com" class="contact__item">
+            <span class="contact__icon">✉️</span>
+            <span>daniel.guesh@example.com</span>
+          </a>
+          <a href="tel:+251900000000" class="contact__item">
+            <span class="contact__icon">📞</span>
+            <span>+251 900 000 000</span>
+          </a>
+          <a href="https://github.com/danielguesh" target="_blank" rel="noopener noreferrer" class="contact__item">
+            <span class="contact__icon">🐙</span>
+            <span>github.com/danielguesh</span>
+          </a>
+        </div>
+
+        <form class="contact-form fade-in" id="contactForm">
+          <label class="form-label" for="name">Name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="Your name" required />
+
+          <label class="form-label" for="email">Email</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" required />
+
+          <label class="form-label" for="message">Message</label>
+          <textarea class="form-input" id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+          <button type="submit" class="btn btn--primary btn--full">Send Message</button>
+          <p class="form-status" id="formStatus"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">&copy; 2026 Daniel Guesh. All rights reserved.</p>
+
+      <div class="footer__socials">
+        <a href="https://github.com/danielguesh" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1-.02-1.96-3.2.7-3.87-1.54-3.87-1.54-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.76 2.7 1.25 3.36.96.1-.75.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .96-.31 3.15 1.18a10.9 10.9 0 0 1 5.74 0c2.19-1.49 3.15-1.18 3.15-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.42.36.78 1.08.78 2.17 0 1.57-.01 2.83-.01 3.22 0 .31.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5z"/></svg>
+        </a>
+        <a href="https://linkedin.com/in/danielguesh" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.58c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0z"/></svg>
+        </a>
+        <a href="https://t.me/danielguesh" target="_blank" rel="noopener noreferrer" aria-label="Telegram" class="social-icon">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.05 2.1 19.6 21.6c-.26 1.15-.95 1.43-1.93.89l-5.32-3.92-2.57 2.47c-.28.28-.52.52-1.07.52l.38-5.4L19.2 6.3c.42-.37-.09-.58-.65-.2L6.4 13.86l-5.34-1.67c-1.16-.36-1.18-1.16.24-1.72L21.6.9c.97-.36 1.82.22 1.45 1.2z"/></svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
